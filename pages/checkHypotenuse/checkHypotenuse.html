@@ -4,24 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fun with Triangles</title>
-  <link href="./styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" async></script>
+  <title>Check Hypotenuse</title>
 </head>
 <body>
   <section>
-    <h1>Welcome to Fun with Triangles</h1>
-    <div>
-      <a class='link' href="./pages/angleOfTriangles/angleOfTriangles.html">Angles of Triangles?</a>
-    </div>
-    <div>
-      <a class='link' href='./pages/checkHypotenuse/checkHypotenuse.html'>Check Hypotenuse</a>
-    </div>
-    <div>
-      <a class='link' href='./pages/calculateArea/calculateArea.html'>Calculate Area</a>
-    </div>
-    <div>
-      <a class='link' href='./pages/takeAQquiz.html'>Take a Quiz??</a>
-    </div>
+    <a href="../../index.html">Go Back</a>
+    <h1>Enter the lengths of sides of right angle triangle</h1>
+    <form>
+      <label for="a"> a =</label>
+      <input name='a' id='oppo' type='number' min="1" max="180" required >
+      <label for="b"> b =</label>
+      <input name='b' id='adj' type='number' min="1" max="180"  required >
+      <button id='submit'>Submit</button>
+    </form>
+    <div class="output">Hypotenuse will be calculated here-</div>
   </section>
   <footer class="footer">
     <div class="footer-header">
