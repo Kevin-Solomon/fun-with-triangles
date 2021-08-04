@@ -7,5 +7,5 @@ console.log(outputDiv)
 document.addEventListener("submit",(e)=>{
   e.preventDefault();
   let hypo = Math.sqrt((opposite.value ** 2)+(adjacent.value ** 2))
-  outputDiv.innerHTML = hypo
+  outputDiv.innerHTML = `The length of the hypotenuse is ${hypo}`
 } )

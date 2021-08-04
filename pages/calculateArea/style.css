@@ -1,48 +1,23 @@
-section .formula {
+:root {
+  --primary-color: #3aafa9;
+  --text-color: #feffff;
+  --link-color: #17252a;
+}
+section #firstFormula {
   display: none;
 }
-.link {
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  /* background-color: azure; */
-  /* margin-bottom: 0.2rem; */
-  display: inline-block;
-  /* color: white; */
+section #secondFormula {
+  display: none;
 }
-.primary-link {
-  background-color: var(--primary-color);
-  border-radius: 0.5rem;
-  /* color: white; */
+section #thirdFormula {
+  display: none;
 }
-.secondary-link {
-  /* color: red; */
-  border-radius: 0.5rem;
-  /* border: 1px solid var(--primary-color); */
-  /* color: var(--primary-color); */
+section .formula {
+  margin: 3rem;
 }
-
-/* list */
-.list-non-bullet {
-  list-style: none;
-  padding: 0;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+section label {
+  font-size: 1.2rem;
 }
-.list-item-inline {
-  display: inline;
-  padding: 0 0.5rem;
-}
-.footer {
-  /* background-color: var(--primary-color); */
-  padding: 2rem 1rem;
-  text-align: center;
-  /* color: white; */
-  text-align: center;
-  border-top-right-radius: 1rem;
-}
-.footer .links {
-  /* color: white; */
-}
-.footer ul {
-  padding: 0;
+section .output {
+  color: var(--link-color);
 }

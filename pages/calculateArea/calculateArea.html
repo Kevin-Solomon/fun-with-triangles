@@ -4,31 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href='../../styles.css'>
   <link href="./style.css" rel="stylesheet">
   <script src='./app.js' async></script>
   <title>Calculate Area</title>
 </head>
 <body>
   <section>
-    <a href="../../index.html">Go Back</a>
+    <span><a href="../../index.html">Go Back</a></span>
     <h1>Calculate Area
       Select an option below as per the data you have for a triangle
     </h1>
-    <input id="option1" type='radio' name='option'/>
-    <label for="option1"> If you have base and height length</label>
-    <input id="option2" type='radio' name='option'/>
-    <label for="option2">If you have length of 3 sides</label>
-    <input id="option3" type='radio' name='option'/>
-    <label for="option3">If you have length of 2 sides and included angle</label>
+    <label for="option1"><input id="option1" type='radio' name='option'/> If you have base and height </label>
+    <label for="option2"><input id="option2" type='radio' name='option'/>If you have length of 3 sides</label>
+    <label for="option3"><input id="option3" type='radio' name='option'/>If you have length of 2 sides and included angle</label>
     <div class="formula" id="firstFormula">
       <form>
         <label>Base = </label>
         <input type='number' required>
         <label>Height = </label>
         <input type='number' required>
+        <br>
         <button>Submit</button>
       </form>
-      <div class='nothing'>Area= 1/2*base*height</div>
+      <div class='actual-formula'>Area= 1/2*base*height</div>
       <div class='output'>Area Will be calculated</div>
     </div>
     <div class="formula" id="secondFormula">
@@ -39,10 +38,11 @@
         <input type='number' required>
         <label>c = </label>
         <input type='number' required>
+        <br>
         <button>Submit</button>
       </form>
       <div class='output'>Area Will be calculated</div>
-      <div>Area= √s(s-a)(s-b)(s-c)</div>
+      <div class='actual-formula'>Area= √s(s-a)(s-b)(s-c)</div>
     </div>
     <div class="formula" id="thirdFormula">
       <form>
@@ -52,10 +52,11 @@
         <input type='number' required>
         <label>∠A(deg) = </label>
         <input type='number' required>
+        <br>
         <button>Submit</button>
       </form>
       <div class='output'>Area Will be calculated</div>
-      <div>Area= 1/2*b*c*sin(A)</div>
+      <div class='actual-formula'>Area= 1/2*b*c*sin(A)</div>
     </div>
     <div class="output"></div>
   </section>

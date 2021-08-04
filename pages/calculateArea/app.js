@@ -5,17 +5,20 @@ const divArr= document.querySelectorAll(".formula")
 const forms= document.querySelectorAll('form')
 console.log(forms)
 console.log(divArr[0].getElementsByClassName('output'))
+function changeDisplay(divArray,changeId,noChange,noChange1){
+  console.log(noChange)
+  divArray[changeId].style.display="block";
+  divArray[noChange].style.display="none";
+  divArray[noChange1].style.display="none";
+}
 option1.addEventListener('change', ()=>{
-  console.log("done")
-  divArr[0].style.display="block";
+  changeDisplay(divArr,0,1,2)
 })
 option2.addEventListener('change', ()=>{
-  console.log("done")
-  divArr[1].style.display="block";
+  changeDisplay(divArr,1,0,2)
 })
 option3.addEventListener('change', ()=>{
-  console.log("done")
-  divArr[2].style.display="block";
+  changeDisplay(divArr,2,1,0)
 })
 forms[0].addEventListener('submit',(e)=>{
   console.log("sup")
@@ -23,7 +26,7 @@ forms[0].addEventListener('submit',(e)=>{
   const b = forms[0][0].value;
   const h = forms[0][1].value;
   const area = 0.5*b*h;
-  divArr[0].getElementsByClassName('output')[0].innerHTML = area;
+  divArr[0].getElementsByClassName('output')[0].innerHTML = `The area is ${area}`;
 })
 forms[1].addEventListener('submit',(e)=>{
   console.log("sup")
@@ -35,7 +38,7 @@ forms[1].addEventListener('submit',(e)=>{
   const temp =s*(s-a)*(s-b)*(s-c);
   console.log(temp,s,typeof a,b,c)
   const area = Math.sqrt(temp);
-  divArr[1].getElementsByClassName('output')[0].innerHTML = area;
+  divArr[1].getElementsByClassName('output')[0].innerHTML = `The area is ${area}`;
 })
 forms[2].addEventListener('submit',(e)=>{
   console.log("sup")
@@ -44,5 +47,5 @@ forms[2].addEventListener('submit',(e)=>{
   const c = Number(forms[2][1].value);
   const aDeg = Number(forms[2][2].value)*(Math.PI/180);
   const area = 0.5*b*c*Math.sin(aDeg);
-  divArr[2].getElementsByClassName('output')[0].innerHTML = area;
+  divArr[2].getElementsByClassName('output')[0].innerHTML = `The area is ${area}`;
 })
