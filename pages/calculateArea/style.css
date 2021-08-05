@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #3aafa9;
-  --text-color: #feffff;
-  --link-color: #17252a;
+  --primary-color: #fbffff;
+  --text-color: #170d08;
+  --link-color: #e3c4b4;
 }
 section #firstFormula {
   display: none;

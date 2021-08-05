@@ -27,10 +27,10 @@ form.addEventListener('submit', (e) => {
   for (let i = 0; i < answer.length; i++) {
     if (answer[i] === userAnswer[i]) {
       score += 1;
-      divArr[i].style.backgroundColor = 'green'
+      divArr[i].style.backgroundColor = 'lightgreen'
     }
     else {
-      divArr[i].style.backgroundColor = 'red'
+      divArr[i].style.backgroundColor = 'pink'
     }
   }
   outputDiv.innerHTML = `Your score is ${score}`

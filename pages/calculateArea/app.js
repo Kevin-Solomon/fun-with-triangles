@@ -23,10 +23,10 @@ option3.addEventListener('change', ()=>{
 forms[0].addEventListener('submit',(e)=>{
   console.log("sup")
   e.preventDefault();
-  const b = forms[0][0].value;
-  const h = forms[0][1].value;
+  const b = Number(forms[0][0].value);
+  const h = Number(forms[0][1].value);
   const area = 0.5*b*h;
-  divArr[0].getElementsByClassName('output')[0].innerHTML = `The area is ${area}`;
+  divArr[0].getElementsByClassName('output')[0].innerHTML = `The area is ${area.toFixed(2)}`;
 })
 forms[1].addEventListener('submit',(e)=>{
   console.log("sup")
@@ -38,7 +38,7 @@ forms[1].addEventListener('submit',(e)=>{
   const temp =s*(s-a)*(s-b)*(s-c);
   console.log(temp,s,typeof a,b,c)
   const area = Math.sqrt(temp);
-  divArr[1].getElementsByClassName('output')[0].innerHTML = `The area is ${area}`;
+  divArr[1].getElementsByClassName('output')[0].innerHTML = `The area is ${area.toFixed(2)}`;
 })
 forms[2].addEventListener('submit',(e)=>{
   console.log("sup")
@@ -47,5 +47,5 @@ forms[2].addEventListener('submit',(e)=>{
   const c = Number(forms[2][1].value);
   const aDeg = Number(forms[2][2].value)*(Math.PI/180);
   const area = 0.5*b*c*Math.sin(aDeg);
-  divArr[2].getElementsByClassName('output')[0].innerHTML = `The area is ${area}`;
+  divArr[2].getElementsByClassName('output')[0].innerHTML = `The area is ${area.toFixed(2)}`;
 })
