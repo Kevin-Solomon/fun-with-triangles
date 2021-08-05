@@ -21,3 +21,6 @@ section label {
 section .output {
   color: var(--link-color);
 }
+section label {
+  margin: 0.5rem;
+}
